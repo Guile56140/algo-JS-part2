@@ -20,16 +20,17 @@
     <label>Mon nombre chance</label>
     <br/>
     <input type="text" id="number" placeholder="Mon nombre chance"/>
-    <button type="button" class="btn btn-primary" onclick="incrementNumber()">
+    <button type="button" class="btn btn-primary" onclick="displayMessage()">
         Afficher le nombre suivant
     </button>
 </div>
 
 <script type="text/javascript">
-    function incrementNumber() {
+    function displayMessage() {
         let number = document.getElementById("number").value;
-
+        let message = Number(number) + 1
         // CODE HERE !
+        alert(message)
     }
 </script>
 </body>
